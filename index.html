@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume</title>
+    <style>
+        .section {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="section" id="education" contenteditable="true" onblur="saveChanges('education')">
+        <h3>Education</h3>
+        <p>School Name: XYZ University</p>
+        <p>Degree: Bachelor of Science in Computer Science</p>
+    </div>
+
+    <div class="section" id="work-experience" contenteditable="true" onblur="saveChanges('work-experience')">
+        <h3>Work Experience</h3>
+        <p>Company: ABC Corp</p>
+        <p>Position: Software Developer</p>
+    </div>
+
+    <!-- Include your script -->
+    <script src="app.js"></script>
+
+</body>
+</html>
